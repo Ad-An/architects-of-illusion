@@ -23,38 +23,42 @@
 </head>
 <body class="bg-viewportDark text-slate-100 font-sans antialiased min-h-screen">
 
-  <!-- HEADER -->
-  <header class="border-b border-slate-800 py-12 text-center px-4">
-    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-2">
+  <!-- HEADER / HERO -->
+  <header class="border-b border-slate-800 py-16 text-center px-4">
+    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-3">
       Architects of <span class="text-vfxGold">Illusion</span>
     </h1>
-    <p class="text-slate-400 text-lg max-w-xl mx-auto">
+    <p class="text-slate-400 text-lg max-w-xl mx-auto mb-8">
       Deconstructing movie magic across history & documenting 3D experiments in Blender.
     </p>
-    <p class="text-xs text-slate-500 uppercase tracking-widest mt-4 font-semibold">By Adhirath</p>
+
+    <!-- HERO BUTTONS -->
+    <div class="flex items-center justify-center gap-4 max-w-md mx-auto">
+      <!-- Primary CTA: VFX History (Gradient Filled) -->
+      <a href="#vfx-history" class="px-6 py-3 rounded-lg text-sm font-bold text-slate-950 bg-gradient-to-r from-amber-400 via-vfxGold to-amber-600 shadow-lg shadow-amber-500/20 hover:scale-105 transition-all">
+        VFX History
+      </a>
+      
+      <!-- Secondary CTA: Blender Projects (Transparent / Ghost) -->
+      <a href="#blender-lab" class="px-6 py-3 rounded-lg text-sm font-semibold text-slate-300 border border-slate-700 hover:border-orange-500/50 hover:text-orange-400 hover:bg-slate-800/40 transition-all">
+        Blender Lab
+      </a>
+    </div>
+
+    <p class="text-xs text-slate-500 uppercase tracking-widest mt-8 font-semibold">By Adhirath</p>
   </header>
 
   <!-- MAIN CONTAINER -->
-  <main class="max-w-4xl mx-auto px-4 py-10">
-
-    <!-- FILTER BUTTONS -->
-    <div class="flex justify-center space-x-3 mb-12">
-      <button class="px-4 py-2 rounded-full text-sm font-semibold bg-slate-800 text-white hover:bg-slate-700 transition">Show All</button>
-      <button class="px-4 py-2 rounded-full text-sm font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/30 hover:bg-amber-500/20 transition">VFX History</button>
-      <button class="px-4 py-2 rounded-full text-sm font-semibold bg-orange-500/10 text-orange-400 border border-orange-500/30 hover:bg-orange-500/20 transition">Blender Lab</button>
-    </div>
+  <main class="max-w-4xl mx-auto px-4 py-12">
 
     <!-- TIMELINE CONTAINER -->
     <div class="relative border-l-2 border-slate-800 ml-4 md:ml-32 space-y-12">
 
       <!-- TIMELINE ITEM 1: HISTORY -->
-      <div class="relative pl-8 md:pl-10">
-        <!-- Year Badge (Left) -->
+      <div id="vfx-history" class="relative pl-8 md:pl-10">
         <span class="hidden md:block absolute -left-28 top-1 text-sm font-bold text-slate-500 text-right w-20">1968</span>
-        <!-- Node Dot -->
         <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-vfxGold ring-4 ring-viewportDark"></div>
         
-        <!-- Content Card -->
         <article class="bg-cardBg border border-slate-800 rounded-xl p-6 shadow-lg hover:border-slate-700 transition">
           <div class="flex items-center justify-between mb-2">
             <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">VFX History</span>
@@ -69,13 +73,10 @@
       </div>
 
       <!-- TIMELINE ITEM 2: BLENDER LAB -->
-      <div class="relative pl-8 md:pl-10">
-        <!-- Year Badge (Left) -->
+      <div id="blender-lab" class="relative pl-8 md:pl-10">
         <span class="hidden md:block absolute -left-28 top-1 text-sm font-bold text-slate-500 text-right w-20">2026</span>
-        <!-- Node Dot -->
         <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blenderOrange ring-4 ring-viewportDark"></div>
         
-        <!-- Content Card -->
         <article class="bg-cardBg border border-slate-800 rounded-xl p-6 shadow-lg hover:border-slate-700 transition">
           <div class="flex items-center justify-between mb-2">
             <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-orange-500/10 text-orange-400 border border-orange-500/20">Blender Lab</span>
