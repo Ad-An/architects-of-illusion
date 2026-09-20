@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architects of Illusion — A VFX & 3D Journal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            vfxGold: '#f59e0b',
+            blenderOrange: '#ea580c',
+            viewportDark: '#0f172a',
+            cardBg: '#1e293b'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-viewportDark text-slate-100 font-sans antialiased min-h-screen">
+
+  <!-- HEADER -->
+  <header class="border-b border-slate-800 py-12 text-center px-4">
+    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-2">
+      Architects of <span class="text-vfxGold">Illusion</span>
+    </h1>
+    <p class="text-slate-400 text-lg max-w-xl mx-auto">
+      Deconstructing movie magic across history & documenting 3D experiments in Blender.
+    </p>
+    <p class="text-xs text-slate-500 uppercase tracking-widest mt-4 font-semibold">By Adhirath</p>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-4xl mx-auto px-4 py-10">
+
+    <!-- FILTER BUTTONS -->
+    <div class="flex justify-center space-x-3 mb-12">
+      <button class="px-4 py-2 rounded-full text-sm font-semibold bg-slate-800 text-white hover:bg-slate-700 transition">Show All</button>
+      <button class="px-4 py-2 rounded-full text-sm font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/30 hover:bg-amber-500/20 transition">VFX History</button>
+      <button class="px-4 py-2 rounded-full text-sm font-semibold bg-orange-500/10 text-orange-400 border border-orange-500/30 hover:bg-orange-500/20 transition">Blender Lab</button>
+    </div>
+
+    <!-- TIMELINE CONTAINER -->
+    <div class="relative border-l-2 border-slate-800 ml-4 md:ml-32 space-y-12">
+
+      <!-- TIMELINE ITEM 1: HISTORY -->
+      <div class="relative pl-8 md:pl-10">
+        <!-- Year Badge (Left) -->
+        <span class="hidden md:block absolute -left-28 top-1 text-sm font-bold text-slate-500 text-right w-20">1968</span>
+        <!-- Node Dot -->
+        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-vfxGold ring-4 ring-viewportDark"></div>
+        
+        <!-- Content Card -->
+        <article class="bg-cardBg border border-slate-800 rounded-xl p-6 shadow-lg hover:border-slate-700 transition">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">VFX History</span>
+            <span class="text-xs text-slate-500">NEW</span>
+          </div>
+          <h2 class="text-xl font-bold text-white mb-2">Rotating Sets & Slit-Scan: How 2001 Built the Future</h2>
+          <p class="text-slate-400 text-sm mb-4">
+            A deep dive into Stanley Kubrick and Douglas Trumbull's practical magic before digital graphics existed.
+          </p>
+          <a href="#" class="inline-flex items-center text-xs font-bold text-vfxGold hover:underline">Read Analysis &rarr;</a>
+        </article>
+      </div>
+
+      <!-- TIMELINE ITEM 2: BLENDER LAB -->
+      <div class="relative pl-8 md:pl-10">
+        <!-- Year Badge (Left) -->
+        <span class="hidden md:block absolute -left-28 top-1 text-sm font-bold text-slate-500 text-right w-20">2026</span>
+        <!-- Node Dot -->
+        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blenderOrange ring-4 ring-viewportDark"></div>
+        
+        <!-- Content Card -->
+        <article class="bg-cardBg border border-slate-800 rounded-xl p-6 shadow-lg hover:border-slate-700 transition">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-semibold px-2.5 py-0.5 rounded bg-orange-500/10 text-orange-400 border border-orange-500/20">Blender Lab</span>
+            <span class="text-xs text-slate-500">Lab Log #01</span>
+          </div>
+          <h2 class="text-xl font-bold text-white mb-2">In the Lab: Lighting & Focal Lengths in Sci-Fi Interiors</h2>
+          <p class="text-slate-400 text-sm mb-4">
+            Attempting to recreate Kubrick's famous corridor perspective inside Blender 3D.
+          </p>
+          <a href="#" class="inline-flex items-center text-xs font-bold text-blenderOrange hover:underline">View Render & Process &rarr;</a>
+        </article>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-800 text-center py-8 text-xs text-slate-500 mt-20">
+    Architects of Illusion — English Assignment Blog Project
+  </footer>
+
+</body>
+</html>
