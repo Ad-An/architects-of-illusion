@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VFX History Timeline — Architects of Illusion</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            vfxGold: '#f59e0b',
+            viewportDark: '#0a0f1d',
+            cardBg: '#131b2e'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-viewportDark text-slate-100 font-sans antialiased min-h-screen">
+
+  <!-- TOP NAV BAR -->
+  <nav class="border-b border-slate-800/80 bg-slate-900/50 backdrop-blur-md sticky top-0 z-50 px-6 py-4 flex items-center justify-between">
+    <a href="index.html" class="text-xs font-bold uppercase tracking-widest text-slate-400 hover:text-amber-400 transition flex items-center gap-2">
+      &larr; Back to Landing
+    </a>
+    <span class="text-sm font-extrabold text-amber-400">VFX History Timeline</span>
+    <span class="text-xs text-slate-500 font-semibold">By Adhirath</span>
+  </nav>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-6xl mx-auto px-6 py-16">
+    
+    <header class="mb-16 text-center">
+      <h1 class="text-3xl md:text-5xl font-extrabold text-white mb-3">Deconstructing Movie Magic</h1>
+      <p class="text-slate-400 text-sm max-w-lg mx-auto">Follow the snake path chronologically across cinema history.</p>
+    </header>
+
+    <!-- SNAKE TIMELINE GRID (Width 3) -->
+    <div class="relative grid grid-cols-1 md:grid-cols-3 gap-y-20 gap-x-12">
+
+      <!-- ==================== ROW 1 (Left to Right) ==================== -->
+
+      <!-- POST 1 (Col 1) -->
+      <div class="relative group">
+        <!-- Connecting Line Right -->
+        <div class="hidden md:block absolute top-1/2 left-1/2 w-full h-[3px] bg-amber-500/30 -z-10"></div>
+        
+        <article class="bg-cardBg border border-amber-500/20 rounded-2xl p-6 shadow-xl hover:border-amber-500/50 transition duration-300">
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-xs font-bold px-2.5 py-1 rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/20">1968</span>
+            <span class="text-xs text-slate-500">Post #01</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2 group-hover:text-amber-400 transition">2001: Rotating Sets & Slit-Scan</h3>
+          <p class="text-slate-400 text-xs leading-relaxed mb-4">How Stanley Kubrick created weightlessness and hyper-space without digital computers.</p>
+          <button class="text-xs font-bold text-amber-400 hover:underline">Open Breakdown &rarr;</button>
+        </article>
+      </div>
+
+      <!-- POST 2 (Col 2) -->
+      <div class="relative group">
+        <!-- Connecting Line Right -->
+        <div class="hidden md:block absolute top-1/2 left-1/2 w-full h-[3px] bg-amber-500/30 -z-10"></div>
+
+        <article class="bg-cardBg border border-amber-500/20 rounded-2xl p-6 shadow-xl hover:border-amber-500/50 transition duration-300">
+          <div class="flex justify-between items-center mb-3">
+            <span class="text-xs font-bold px-2.5 py-1 rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/20">1977</span>
+            <span class="text-xs text-slate-500">Post #02</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2 group-hover:text-amber-400 transition">Star Wars: Dykstraflex Motion Control</h3>
+          <p class="text-slate-400 text-xs leading-relaxed mb-4">The birth of computer-controlled cameras that allowed multi-layer space battle shots.</p>
+          <button class="text-xs font-bold text-amber-400 hover:underline">Open Breakdown &rarr;</button>
+        </article>
+      </div>
+
+      <!-- SLOT 3 / SNAKE CURVE RIGHT (Col 3) -->
+      <div class="relative group">
+        <!-- Snake Loop Curve Down to Row 2 -->
+        <div class="hidden md:block absolute top-1/2 left-0 w-1/2 h-[calc(100%+5rem)] border-t-[3px] border-r-[3px] border-amber-500/30 rounded-tr-[3rem] -z-10"></div>
+
+        <!-- Placeholder/Dummy Node to showcase line continuation -->
+        <div class="bg-slate-900/40 border border-slate-800 border-dashed rounded-2xl p-6 text-center text-slate-500">
+          <span class="text-xs font-semibold block mb-1">Coming Soon</span>
+          <p class="text-xs">Next Historical Era</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Include Shared Lens Engine -->
+  <script src="lens.js"></script>
+</body>
+</html>
