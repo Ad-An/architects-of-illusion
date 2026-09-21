@@ -9,9 +9,9 @@
   <style>
     :root {
       /* ------------------------------------------------------------- */
-      /*  BACKGROUND IMAGE VARIABLE — Change your image URL here       */
+      /*  BACKGROUND IMAGE VARIABLE — Your local synthwave image       */
       /* ------------------------------------------------------------- */
-      --bg-image-url: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=2000&auto=format&fit=crop');
+      --bg-image-url: url('2IT proj I.jpg');
       
       /* ACCENT GLOW COLORS */
       --vfx-glow: rgba(245, 158, 11, 0.35);
@@ -21,10 +21,11 @@
     /* Fullscreen custom background overlay */
     .hero-bg {
       background-image: 
-        linear-gradient(to bottom, rgba(10, 15, 29, 0.8), rgba(10, 15, 29, 0.95)),
+        linear-gradient(to bottom, rgba(10, 15, 29, 0.45), rgba(10, 15, 29, 0.75)),
         var(--bg-image-url);
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
     }
   </style>
 
@@ -51,33 +52,33 @@
 
   <!-- TOP BRAND HEADER -->
   <header class="pt-8 text-center z-10">
-    <p class="text-xs uppercase tracking-[0.3em] text-slate-400 font-medium">Visual Effects & 3D Animation Logs</p>
+    <p class="text-xs uppercase tracking-[0.3em] text-slate-300 font-medium drop-shadow">Visual Effects & 3D Animation Logs</p>
   </header>
 
   <!-- CENTER HERO CONTENT -->
   <main class="text-center px-6 max-w-3xl z-10 my-auto">
     
     <!-- Title with soft glow -->
-    <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-4 drop-shadow-[0_0_25px_rgba(245,158,11,0.3)]">
+    <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-4 drop-shadow-[0_0_25px_rgba(245,158,11,0.4)]">
       Architects of <span class="bg-gradient-to-r from-amber-300 via-vfxGold to-amber-500 bg-clip-text text-transparent">Illusion</span>
     </h1>
 
     <!-- Subtitle -->
-    <p class="text-slate-300 text-base md:text-xl max-w-2xl mx-auto font-light leading-relaxed mb-10">
+    <p class="text-slate-200 text-base md:text-xl max-w-2xl mx-auto font-light leading-relaxed mb-10 drop-shadow">
       Deconstructing movie magic across history & documenting 3D experiments in Blender.
     </p>
 
     <!-- HERO BUTTONS -->
     <div class="flex flex-col sm:flex-row items-center justify-center gap-5">
-      <!-- Primary CTA: VFX History (Gradient Filled & Glowing Shadow) -->
+      <!-- Primary CTA: VFX History -->
       <a href="vfx-history.html" 
          class="w-full sm:w-auto px-8 py-3.5 rounded-xl text-sm font-bold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 shadow-[0_0_25px_var(--vfx-glow)] hover:shadow-[0_0_35px_rgba(245,158,11,0.6)] hover:scale-105 transition-all duration-300 border border-amber-300/30">
         VFX History
       </a>
       
-      <!-- Secondary CTA: Blender Lab (Transparent / Ghost Outline) -->
+      <!-- Secondary CTA: Blender Lab -->
       <a href="blender-lab.html" 
-         class="w-full sm:w-auto px-8 py-3.5 rounded-xl text-sm font-semibold text-slate-200 border border-slate-700/80 bg-slate-900/60 backdrop-blur-md hover:border-orange-500/50 hover:text-orange-400 hover:bg-orange-500/10 transition-all duration-300">
+         class="w-full sm:w-auto px-8 py-3.5 rounded-xl text-sm font-semibold text-slate-100 border border-slate-600/80 bg-slate-900/70 backdrop-blur-md hover:border-orange-500/50 hover:text-orange-400 hover:bg-orange-500/20 transition-all duration-300">
         Blender Lab
       </a>
     </div>
@@ -86,7 +87,7 @@
 
   <!-- FOOTER / AUTHOR -->
   <footer class="pb-8 text-center z-10">
-    <p class="text-xs text-slate-400 tracking-widest font-semibold uppercase">By Adhirath</p>
+    <p class="text-xs text-slate-400 tracking-widest font-semibold uppercase drop-shadow">By Adhirath</p>
   </footer>
 
   <!-- SHARED LENS SHADER ENGINE -->

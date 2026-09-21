@@ -17,7 +17,7 @@ const WARP_STRENGTH = -50;             // Refraction displacement power when act
 
 // 3. FPS CROSSHAIR STYLE CONTROL
 const CROSSHAIR_SIZE = 36;              // Width/Height of crosshair cursor (px)
-const CROSSHAIR_COLOR = '#00ff44';      // Bright tactical green
+const CROSSHAIR_COLOR = '#81f9ff';      // Bright tactical green
 const CROSSHAIR_OUTLINE = '#000000';    // High-contrast black border
 
 // 4. SPEED-DEPENDENT DYNAMIC LENS SIZE VARIABLES
@@ -34,7 +34,7 @@ const REACTIVATE_SPEED_THRESHOLD = 1.0; // Speed above which mouse is considered
 const DEACTIVATE_DELAY = 1.0;           // Seconds of slow/idle mouse before expansion begins
 const EXPAND_DURATION = 1.0;            // Seconds taken to zoom out & drop warp to 0
 const CONTRACT_DURATION = 0.5;          // Seconds taken to zoom back in & restore warp
-const REACTIVATE_FAST_DURATION = 2;   // Seconds of fast movement required to turn back ON
+const REACTIVATE_FAST_DURATION = 1;   // Seconds of fast movement required to turn back ON
 
 // 7. VELOCITY DAMPING & LERP (JITTER REDUCTION)
 const SPEED_SMOOTHING = 0.12;           // EMA Velocity Damping
